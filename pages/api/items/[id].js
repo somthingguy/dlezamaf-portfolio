@@ -1,7 +1,7 @@
 import { modelData } from "../../../modelsdata";
 
 export default function handler({ query: { id } }, res) {
-    const filtered = modelData.filter(article => article.id === id)
+    const filtered = modelData.filter(model => model.id === id)
 
     if(filtered.length > 0) {
         res.status(200).json(filtered[0])
