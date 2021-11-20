@@ -30,7 +30,7 @@ const model = ({ model }) => {
 };
 
 export const getStaticProps = async (context) => {
-  const res = getModelData(context.params.id);
+  const res = getModelDataById(context.params.id);
 
   const model = await res[0];
 
