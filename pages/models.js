@@ -2,6 +2,7 @@ import { server } from '../config'
 import ModelList from '../components/ModelList'
 import Meta from '../components/Meta'
 import styles from '../components/Models.module.css'
+import { getModelData } from './api/items'
 
 export default function Models({ modelData }) {
   return (
@@ -17,8 +18,8 @@ export default function Models({ modelData }) {
 }
 
 export const getStaticProps = async () => {
-    const res = await fetch(`${server}/api/items`)
-    const modelData = await res.json()
+    const res = getModelData();
+    const modelData = await res
 
     return {
         props: {

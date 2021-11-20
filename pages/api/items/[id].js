@@ -1,5 +1,10 @@
 import { modelData } from "../../../modelsdata";
 
+export function getModelData (id) {
+    return modelData.filter((model) => model.id === id);
+} 
+    
+
 export default function handler({ query: { id } }, res) {
     const filtered = modelData.filter(model => model.id === id)
 

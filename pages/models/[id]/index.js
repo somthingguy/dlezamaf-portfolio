@@ -3,6 +3,8 @@ import Meta from "../../../components/Meta"
 import Image from "next/image"
 import styles from '../../../styles/ModelItems.module.css'
 import Link from 'next/link'
+import { getModelData } from '../../api/items'
+import { getModelData as getModelDataById } from '../../api/items/[id]'
 
 const model = ({ model }) => {
 
@@ -27,9 +29,9 @@ const model = ({ model }) => {
 }
 
 export const getStaticProps = async (context) => {
-    const res = await fetch(`${server}/api/items/${context.params.id}`)
+    const res = getModelData(context.params.id);
 
-    const model = await res.json()
+    const model = await res[0]
 
     return {
         props: {
@@ -39,10 +41,10 @@ export const getStaticProps = async (context) => {
 }
 
 export const getStaticPaths = async () => {
-    const res = await fetch(`${server}/api/items`)
+    const res = getModelData();
 
-    const models = await res.json()
-
+    const models = await res
+    
     const ids = models.map((model) => model.id)
     const paths = ids.map((id) => ({ params: { id: id.toString() } }))
 
