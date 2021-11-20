@@ -1,0 +1,38 @@
+.content {
+    display: flex;
+    margin-top: 2.5rem;
+}
+
+.leftGrid {
+    width: 66%;
+}
+
+.leftGrid Image {
+    width: auto;
+    height: auto;
+}
+
+.rightGrid {
+    width: 34%;
+    padding-left: 1%;
+    padding-right: 0.9375rem;
+}
+
+.rightGrid h1{
+    font-weight: 700;
+    line-height: 1.18;
+    margin-top: 0.75rem;
+    margin-bottom: 1.875rem;
+}
+
+.rightGrid p{
+    line-height: 1.5;
+    margin-top: 0.75rem;
+    margin-bottom: 1.875rem;
+    padding-right: 10%;
+}
+
+.back {
+    color: white;
+    text-decoration: none;
+}

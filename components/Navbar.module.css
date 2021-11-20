@@ -1,0 +1,77 @@
+
+.navbar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    text-align: center;
+    font-size: 1.25rem;
+  }
+  .navitem {
+      display: inline-block;
+      padding: 0 0.3125rem;
+  }
+  .navitem a {
+      display: block;
+      color: gray;
+      font-weight: bold;
+      text-align: center;
+      margin-left: 1.5rem;
+      margin-right: 1.5rem;
+      padding: 14px 16px;
+      text-decoration: none;
+  }
+  .navitem a:hover {
+      color: green;
+  }
+  .active {
+      border-bottom: 0.187rem solid transparent;
+      color: rgb(14, 189, 108);
+      border-bottom-color: rgb(14, 189, 108);
+  }
+
+  .header {
+      padding: 20px;
+      color: white;
+      text-align: center;
+      font-size: 25px;
+  }
+
+  .dropdown {
+      display: inline-block;
+      padding: 0 0.3125rem;
+  }
+
+  .dropdown a, .dropbtn {
+      display: block;
+      color: gray;
+      font-weight: bold;
+      text-align: center;
+      margin-left: 1.5rem;
+      margin-right: 1.5rem;
+      padding: 14px 16px;
+      text-decoration: none;
+    }
+
+    .dropdown a:hover{
+        color: green;
+    }
+
+    .dropdowncontent {
+        display: none;
+        position: absolute;
+        background-color: #444444;
+        min-width: 160px;
+        box-shadow: 0px 6px 10px 0px rgba(0, 0, 0, 0.2);
+        z-index: 1;
+    }
+    .dropdowncontent a {
+        color: black;
+        padding: 10px 14px;
+        text-decoration: none;
+        display: block;
+        text-align: left;
+    }
+    .dropdown:hover .dropdowncontent {
+        display: block;
+    }
