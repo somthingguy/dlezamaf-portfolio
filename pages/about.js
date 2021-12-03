@@ -7,12 +7,12 @@ export default function About() {
       <Meta title="About Me" description="About Me" />
       <div className={styles.content}>
         <h2>Education: Purdue University (2022)</h2>
-        <h3>Programming/Scripting Languages That I Use: </h3>
         <p>
           I am Diego Lezama Fajardo and I am currently a fourth-year student
           attending Purdue University. I am majoring in Web Development & Design
           and also Animation.
         </p>
+        <h3>Programming/Scripting Languages That I Use: </h3>
         <ul>
           <li>HTML</li>
           <li>CSS</li>
