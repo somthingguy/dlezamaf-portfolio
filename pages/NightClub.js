@@ -21,6 +21,14 @@ const NightClub = () => {
             width={1920}
             height={1080}
           />
+          <iframe
+            width="1280"
+            height="720"
+            allowFullScreen
+            src="https://www.youtube.com/embed/lpNG75xbPMA"
+            title="YouTube video player"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          ></iframe>
         </div>
         <div className={styles.rightGrid}>
           <h1>Night Club</h1>
