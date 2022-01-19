@@ -1,12 +1,12 @@
-import Meta from "../components/Meta";
-import styles from "../styles/About.module.css";
+import Meta from '../components/Meta';
+import styles from '../styles/About.module.css';
 
 export default function About() {
   return (
     <>
       <Meta title="About Me" description="About Me" />
       <div className={styles.content}>
-        <p>
+        <p className={styles.intro}>
           I am Diego Lezama Fajardo and I am currently a fourth-year student
           attending Purdue University. I am majoring in Web Development & Design
           and also Animation.
@@ -19,7 +19,7 @@ export default function About() {
           <li>Javascript</li>
           <li>C#</li>
         </ul>
-        <h3>Frameworks I am Familiar With: </h3>
+        <h3>Frameworks & Libraries I am Familiar With: </h3>
         <ul>
           <li>React.JS</li>
           <li>Next.JS</li>

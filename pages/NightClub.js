@@ -1,6 +1,6 @@
-import Meta from "../components/Meta";
-import Image from "next/image";
-import styles from "../styles/ModelItems.module.css";
+import Meta from '../components/Meta';
+import Image from 'next/image';
+import styles from '../styles/ModelItems.module.css';
 
 const NightClub = () => {
   return (

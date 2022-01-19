@@ -1,20 +1,48 @@
-import { server } from "../../../config";
-import Meta from "../../../components/Meta";
-import Image from "next/image";
-import styles from "../../../styles/ModelItems.module.css";
-import Link from "next/link";
-import { getModelData } from "../../api/items";
-import { getModelData as getModelDataById } from "../../api/items/[id]";
+import { server } from '../../../config';
+import Meta from '../../../components/Meta';
+import Image from 'next/image';
+import styles from '../../../styles/ModelItems.module.css';
+import Link from 'next/link';
+import { getModelData } from '../../api/items';
+import { getModelData as getModelDataById } from '../../api/items/[id]';
 
 const model = ({ model }) => {
   return (
     <>
       <Meta title={model.title} description="Diego's Portfolio" />
       <div className={styles.content}>
+        {/* Left side of page */}
         <div className={styles.leftGrid}>
-          <h1>Placeholder</h1>
-          <Image src={model.thumbnail} alt="image" width={1920} height={1080} />
+          {model.link !== null ? (
+            <iframe
+              className={styles.frame}
+              title={model.title}
+              frameBorder="0"
+              allowFullScreen
+              mozallowfullscreen="true"
+              webkitallowfullscreen="true"
+              allow="autoplay; fullscreen; xr-spatial-tracking"
+              xr-spatial-tracking
+              execution-while-out-of-viewport
+              execution-while-not-rendered
+              web-share
+              src={model.link}
+            ></iframe>
+          ) : null}
+          {model.image1 !== '' ? (
+            <Image src={model.image1} alt="image" width={1920} height={1080} />
+          ) : null}
+          {model.image2 !== '' ? (
+            <Image src={model.image2} alt="image" width={1920} height={1080} />
+          ) : null}
+          {model.image3 !== '' ? (
+            <Image src={model.image3} alt="image" width={1920} height={1080} />
+          ) : null}
+          {model.image4 !== '' ? (
+            <Image src={model.image4} alt="image" width={1920} height={1080} />
+          ) : null}
         </div>
+        {/* Right side of page */}
         <div className={styles.rightGrid}>
           <h1>{model.title}</h1>
           <p>{model.description}</p>

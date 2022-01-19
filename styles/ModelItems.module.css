@@ -36,3 +36,9 @@
     color: white;
     text-decoration: none;
 }
+
+.frame {
+    margin-left: 0rem;
+    width: 1024px;
+    height: 768px;
+}
