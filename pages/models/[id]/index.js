@@ -13,7 +13,7 @@ const model = ({ model }) => {
       <div className={styles.content}>
         {/* Left side of page */}
         <div className={styles.leftGrid}>
-          {model.link !== null ? (
+          {model.link !== '' ? (
             <iframe
               className={styles.frame}
               title={model.title}
