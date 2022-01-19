@@ -18,6 +18,7 @@ export const modelData = [
     title: 'Vending Machine',
     description:
       'Low poly model of a Japanese Vending Machine. Modeled in maya and textured using Substance Painter.',
+    link: '',
     thumbnail: '/thumbnails/vendingmachine.jpg',
     image1: '/images/vending_machine.jpg',
     image2: '',
