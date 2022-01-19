@@ -41,6 +41,11 @@ const model = ({ model }) => {
           {model.image4 !== '' ? (
             <Image src={model.image4} alt="image" width={1920} height={1080} />
           ) : null}
+          {model.video !== '' ? (
+            <video width="1280" height="720" controls>
+              <source src={model.video} />
+            </video>
+          ) : null}
         </div>
         {/* Right side of page */}
         <div className={styles.rightGrid}>

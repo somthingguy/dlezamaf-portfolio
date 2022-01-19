@@ -66,7 +66,7 @@ export const modelData = [
     image2: '/images/dining2.jpg',
     image3: '/images/dining3.jpg',
     image4: '/images/dining4.jpg',
-    video: '',
+    video: '/videos/dinnervideo.mp4',
     category: '3D Environment',
   },
 ];
