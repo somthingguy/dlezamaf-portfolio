@@ -1,5 +1,7 @@
 import Meta from '../components/Meta';
 import styles from '../styles/About.module.css';
+import Image from 'next/image';
+import Link from 'next/link';
 
 export default function About() {
   return (
@@ -34,6 +36,30 @@ export default function About() {
           <li>Unity</li>
           <li>Unreal Engine</li>
         </ul>
+
+        <div className={styles.logos}>
+          <Link href="https://github.com/somthingguy">
+            <a>
+              <Image
+                src="/logos/GitHub.png"
+                alt="GitHub Logo"
+                width={32}
+                height={32}
+              />
+            </a>
+          </Link>
+
+          <Link href="https://www.linkedin.com/in/diego-lezama-fajardo/">
+            <a>
+              <Image
+                src="/logos/Linkedin.png"
+                alt="GitHub Logo"
+                width={32}
+                height={32}
+              />
+            </a>
+          </Link>
+        </div>
       </div>
     </>
   );

@@ -13,3 +13,14 @@
     color: white;
     font-size: 20px;
 }
+
+.logos{
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 25px;
+    padding-left: 50%;
+}
+
+.logos a {
+    padding-left: 5%;
+}

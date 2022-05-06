@@ -1,7 +1,7 @@
-import styles from "../styles/Home.module.css";
-import Link from "next/dist/client/link";
-import Image from "next/dist/client/image";
-import style from "../components/Models.module.css";
+import styles from '../styles/Home.module.css';
+import Link from 'next/dist/client/link';
+import Image from 'next/dist/client/image';
+import style from '../components/Models.module.css';
 
 export default function Home() {
   return (

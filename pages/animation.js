@@ -1,5 +1,5 @@
-import styles from "../styles/Animation.module.css";
-import Meta from "../components/Meta";
+import styles from '../styles/Animation.module.css';
+import Meta from '../components/Meta';
 
 export default function Portfolio() {
   return (
